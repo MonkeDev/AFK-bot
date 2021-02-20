@@ -75,4 +75,9 @@ bot.on('messageCreate', async (msg) => {
         return msg.channel.send(helpMessage);
     };
 
+    if(msg.content.startsWith(prefix + 'ping')) {
+        const message = await msg.channel.send('Pinging...');
+        message.edit(`API: \`${msg.channel.guild.shard.latency}\`\nMessage: \`${Date.now() - message.timestamp}\``);
+    };
+
 });
