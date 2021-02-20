@@ -1,0 +1,25 @@
+{
+  "name": "AFK-bot",
+  "version": "1.0.0",
+  "description": "The bot connected to afk.monkedev.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonkeDev/AFK-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonkeDev/AFK-bot/issues"
+  },
+  "homepage": "https://github.com/MonkeDev/AFK-bot#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "eris": "^0.14.0",
+    "node-fetch": "^2.6.1"
+  }
+}
