@@ -30,6 +30,7 @@ bot.on('messageCreate', async (msg) => {
     msg.channel.send = msg.channel.createMessage;
 
     if(msg.content.startsWith(prefix + 'lb' || prefix + 'leaderboard')) {
+        if(msg.channel.id !== '779440159292522546') return msg.channel.createMessage('Try using the leaderboard command in <#779440159292522546> instead.');
         const cooldown = coolDown.has(msg.author.id + '_lb');
         if(cooldown) return;
         else {
